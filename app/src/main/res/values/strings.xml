@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Transactions</string>
+    <string name="action_settings">Settings</string>
+    <string name="first">This is First Fragment Man !</string>
+    <string name="second">This is Second Fragment Man !</string>
+    <string name="add_first">Add First</string>
+    <string name="remove_first">Remove First</string>
+    <string name="replace_first">Replace First</string>
+    <string name="add_second">Add Second</string>
+    <string name="remove_second">Remove Second</string>
+    <string name="replace_second">Replace Second</string>
+    <string name="attach_first">Attach First</string>
+    <string name="detach_first">Detach First</string>
+    <string name="first_tag">first</string>
+    <string name="second_tag">second</string>
+    <string name="message">Fragment was not added before</string>
+</resources>
+

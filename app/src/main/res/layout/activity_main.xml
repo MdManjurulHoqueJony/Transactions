@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wordpress.jonyonandroidcraftsmanship.transactions.MainActivity"
+    android:background="#FF00BB">
+
+    <Button
+        android:id="@+id/btnAddFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="addFirst"
+        android:text="@string/add_first" />
+
+    <Button
+        android:id="@+id/btnRemoveFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnAddFirst"
+        android:layout_toRightOf="@+id/btnAddFirst"
+        android:onClick="removeFirst"
+        android:text="@string/remove_first" />
+
+    <Button
+        android:id="@+id/btnReplaceFirst"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnRemoveFirst"
+        android:layout_toEndOf="@+id/btnRemoveFirst"
+        android:layout_toRightOf="@+id/btnRemoveFirst"
+        android:onClick="replaceFirst"
+        android:text="@string/replace_first" />
+
+    <Button
+        android:id="@+id/btnAddSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAddFirst"
+        android:onClick="addSecond"
+        android:text="@string/add_second" />
+
+    <Button
+        android:id="@+id/btnRemoveSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRemoveFirst"
+        android:layout_toEndOf="@+id/btnAddSecond"
+        android:layout_toRightOf="@+id/btnAddSecond"
+        android:onClick="removeSecond"
+        android:text="@string/remove_second" />
+
+    <Button
+        android:id="@+id/btnReplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="replaceSecond"
+        android:text="@string/replace_second"
+        android:layout_below="@+id/btnReplaceFirst"
+        android:layout_toRightOf="@+id/btnDetach"
+        android:layout_toEndOf="@+id/btnDetach" />
+
+    <Button
+        android:id="@+id/btnAttachFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAddSecond"
+        android:onClick="attachFirst"
+        android:text="@string/attach_first" />
+
+    <Button
+        android:id="@+id/btnDetach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAttachFirst"
+        android:layout_toEndOf="@+id/btnAttachFirst"
+        android:layout_toRightOf="@+id/btnAttachFirst"
+        android:onClick="detachFirst"
+        android:text="@string/detach_first" />
+
+    <LinearLayout
+        android:id="@+id/llFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAttachFirst"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>
